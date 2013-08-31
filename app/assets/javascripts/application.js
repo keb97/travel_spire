@@ -21,4 +21,4 @@
 // for more details see: http://emberjs.com/guides/application/
 TravelSpire = Ember.Application.create();
 
-
+//= require_tree .

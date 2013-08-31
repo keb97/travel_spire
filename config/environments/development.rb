@@ -1,5 +1,4 @@
 TravelSpire::Application.configure do
-  config.ember.variant = :development
   # Settings specified here will take precedence over those in config/application.rb
 
   # In the development environment your application's code is reloaded on
@@ -35,4 +34,7 @@ TravelSpire::Application.configure do
 
   # Expands the lines which load the assets
   config.assets.debug = true
+
+  config.ember.variant = :development
+
 end
