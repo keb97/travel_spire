@@ -1,0 +1,10 @@
+<div id="container">
+  {{view Ember.TextField valueBinding="newDestinationName" action="addDestination"}}
+  {{newDestinationName}}
+</div>
+
+<ul>
+  {{#each destinations}}
+  <li>{{name}}</li>
+  {{/each}}
+</ul>

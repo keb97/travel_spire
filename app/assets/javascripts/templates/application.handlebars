@@ -11,13 +11,5 @@
   </div>
 </div>
 
-<div id="container">
-  {{view Ember.TextField valueBinding="newDestinationName" action="addDestination"}}
-  {{newDestinationName}}
-</div>
+{{outlet}}
 
-<ul>
-  {{#each destinations}}
-  <li>{{name}}</li>
-  {{/each}}
-</ul>
