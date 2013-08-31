@@ -1,10 +1,21 @@
 <div id="container">
-  {{view Ember.TextField valueBinding="newDestinationName" action="addDestination"}}
-  {{newDestinationName}}
+  {{view Ember.TextField valueBinding="newDestinationName"}}
+  {{view Ember.TextField valueBinding="newDestinationDescription"}}
+  <button {{action addDestination}}>Add</button>
 </div>
+Your preview:
+<p>Where: {{newDestinationName}}</p>
+<p>Why? {{newDestinationDescription}}</p>
 
 <ul>
   {{#each destinations}}
-  <li>{{name}}</li>
+    <li>
+      {{name}}
+      {{description}}
+    </li>
   {{/each}}
 </ul>
+
+
+
+

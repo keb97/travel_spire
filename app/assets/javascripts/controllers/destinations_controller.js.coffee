@@ -3,4 +3,6 @@ TravelSpire.DestinationsController = Ember.Controller.extend
 
   addDestination: ->
     @destinations.pushObject name: @get('newDestinationName')
+    @destinations.pushObject description: @get('newDestinationDescription')
     @set('newDestinationName', "")
+    @set('newDestinationDescription', "")
