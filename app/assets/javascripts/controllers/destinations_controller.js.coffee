@@ -9,3 +9,6 @@ TravelSpire.DestinationsController = Ember.ArrayController.extend
 
 
 
+
+
+
