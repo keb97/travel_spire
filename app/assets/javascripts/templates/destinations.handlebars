@@ -8,11 +8,8 @@ Your preview:
 <p>Why? {{newDestinationDescription}}</p>
 
 <ul>
-  {{#each thing in destinations}}
-  <p>
-      Where:{{thing.name}}
-      Why?:{{thing.description}}
-  </p>
+  {{#each controller}}
+  <li>{{name}}</li>
   {{/each}}
 </ul>
 

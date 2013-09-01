@@ -1,7 +1,11 @@
-TravelSpire.DestinationsController = Ember.Controller.extend
-  destinations:[]
-
+TravelSpire.DestinationsController = Ember.ArrayController.extend
   addDestination: ->
-    @destinations.pushObject ({name: @get('newDestinationName')
-    , description: @get('newDestinationDescription')})
-    @set('newDestination', "")
+    TravelSpire.Destination.createRecord({name: @get('newDestinationName'), description: @get('newDestinationDescription')})
+    @set('newDestinationName', '')
+    @set('newDestinationDescription', '');
+    @get('store').commit()
+
+
+
+
+
